@@ -7,6 +7,7 @@
 # Get Started
 
 Установить jupyter-book https://jupyterbook.org/stable/get-started/install/
+
 В папке проекта запустить
 ```bash
 jupyter book init
