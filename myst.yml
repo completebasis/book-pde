@@ -16,7 +16,6 @@ project:
     - title: Часть I
       children:
         - file: book/hello.md
-        - file: book/solving_methods.md
         - title: Методы решения УрЧП
           children:
             - file: book/solving_methods/characteristics-method.md
