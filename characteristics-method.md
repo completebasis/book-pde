@@ -1,4 +1,6 @@
 
+# Метод характеристик
+
 _По материалам лекций 1–4 Джованни Беллеттини (ICTP Mathematics)_
 
 ---
@@ -42,7 +44,9 @@ $$u_t + b \cdot \nabla u = 0$$
 
 Перепишем левую часть как скалярное произведение в $\mathbb{R}^{1+n}$:
 
-$$u_t + b \cdot \nabla u = (u_t,, \nabla_x u) \cdot (1,, b) = \nabla_{(t,x)} u \cdot (1, b)$$
+$$
+u_t + b \cdot \nabla u = (u_t,, \nabla_x u) \cdot (1,, b) = \nabla_{(t,x)} u \cdot (1, b)
+$$
 
 Это в точности производная по направлению $u$ вдоль пространственно-временного вектора $v = (1, b)$. Таким образом, УРЧП просто утверждает:
 
@@ -176,7 +180,13 @@ $$\boxed{\dot{Y}(s) = f(X(s),, Y(s))}$$
 
 Для УРЧП $\sum_i b_i(x), \partial u/\partial x_i + c(x), u = f(x)$ вывод из раздела 3.5 даёт:
 
-$$\dot{X} = B(X), \qquad X(0) = \bar{x} = \Phi(\sigma)$$ $$\dot{Y} = f(X) - c(X), Y, \qquad Y(0) = \bar{u}(\Phi(\sigma))$$
+$$
+\dot{X} = B(X), \qquad X(0) = \bar{x} = \Phi(\sigma)
+$$ 
+
+$$
+\dot{Y} = f(X) - c(X), Y, \qquad Y(0) = \bar{u}(\Phi(\sigma))
+$$
 
 Здесь $\Phi: U \subset \mathbb{R}^{N-1} \to \mathbb{R}^N$ — вложение $\Sigma$, $\sigma$ — параметр, $s$ — «время» вдоль характеристики.
 
@@ -280,7 +290,13 @@ $$\dot{x}_1 = 1,\quad \dot{x}_2 = 1,\quad \dot{x}_3 = 1,\quad \dot{Y} = 0$$
 
 **Шаг 4 — Решение.**
 
-$$x_1(s, \sigma) = \sigma_1 + s, \qquad x_2(s, \sigma) = \sigma_2 + s, \qquad x_3(s, \sigma) = \sigma_1^2 + \sigma_2^2 + s$$ $$Y(s, \sigma) = \sigma_1 + \sigma_2$$
+$$
+x_1(s, \sigma) = \sigma_1 + s, \qquad x_2(s, \sigma) = \sigma_2 + s, \qquad x_3(s, \sigma) = \sigma_1^2 + \sigma_2^2 + s
+$$
+
+$$
+Y(s, \sigma) = \sigma_1 + \sigma_2
+$$
 
 **Шаг 5 — Обращение отображения.** По данным $(x_1, x_2, x_3)$ найти $(s, \sigma_1, \sigma_2)$.
 
@@ -333,7 +349,9 @@ $$\sum_{i=1}^{N} b_i(x, u), \frac{\partial u}{\partial x_i} = f(x, u)$$
 
 **Прототип — уравнение Бюргерса:**
 
-$$u_t + u, u_x = 0 \qquad \Longleftrightarrow \qquad u_t + \partial_x!\left(\tfrac{u^2}{2}\right) = 0$$
+$$
+u_t + u, u_x = 0 \qquad \Longleftrightarrow \qquad u_t + \partial_x!\left(\tfrac{u^2}{2}\right) = 0
+$$
 
 **Скалярные законы сохранения** $u_t + \partial_x F(u) = 0$ при $F \in C^1$ квазилинейны, так как переписываются в виде $u_t + F'(u), u_x = 0$.
 
@@ -341,7 +359,13 @@ $$u_t + u, u_x = 0 \qquad \Longleftrightarrow \qquad u_t + \partial_x!\left(\tfr
 
 Вывод из раздела 3.5 применим непосредственно:
 
-$$\dot{X} = B(X, Y), \qquad X(0) = \Phi(\sigma)$$ $$\dot{Y} = f(X, Y), \qquad Y(0) = \bar{u}(\Phi(\sigma))$$
+$$
+\dot{X} = B(X, Y), \qquad X(0) = \Phi(\sigma)
+$$
+
+$$
+\dot{Y} = f(X, Y), \qquad Y(0) = \bar{u}(\Phi(\sigma))
+$$
 
 **Принципиальное отличие от линейного случая:** $B$ зависит от $Y$, поэтому уравнения для $X$ и $Y$ **по-настоящему сцеплены**. Нельзя решить для $X$ независимо от $Y$. Вся система решается одновременно.
 
